@@ -2,6 +2,7 @@ import {AppShell, Avatar, Card, Container, Text, useMantineColorScheme} from '@m
 import {homeStyles} from '@local/styles/homeStyles.ts'
 import Typewriter from "typewriter-effect";
 import '@local/styles/wavingHand.css'
+import antiSpiralPFP from '@local/assets/AntiSpiralPFP.png'
 
 export function AppShellMainContent() {
   const {colorScheme} = useMantineColorScheme()
@@ -18,7 +19,7 @@ export function AppShellMainContent() {
         <Card style={{...homeStyles.avatarCard, borderColor: colorScheme === "dark" ? "#FFCC00" : "var(--mantine-primary-color-8)"}}>
           <Avatar
             variant={'circle'}
-            src={'src/assets/AntiSpiralPFP.png'}
+            src={antiSpiralPFP}
             style={{
               width: "100%",
               height: "100%",

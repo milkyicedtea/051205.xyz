@@ -1,5 +1,7 @@
 import {useHover} from "@mantine/hooks"
 import {UnstyledButton, useMantineColorScheme} from "@mantine/core"
+import githubMarkWhite from "@local/assets/github-mark-white.svg"
+import githubMark from "@local/assets/github-mark.svg"
 
 export function GithubIconButton() {
   const {hovered, ref} = useHover();
@@ -18,7 +20,7 @@ export function GithubIconButton() {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundColor: !hovered ? "#2e2e2e" : "#3b3b3b",
-              backgroundImage: "url(src/assets/github-mark-white.svg)",
+              backgroundImage: `url("${githubMarkWhite}")`,
               border: ".0625rem solid #424242",
               display: "flex",
               borderRadius: ".5rem",
@@ -36,7 +38,7 @@ export function GithubIconButton() {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundColor: !hovered ? "#ffffff" : "#f8f9fa",
-              backgroundImage: "url(src/assets/github-mark.svg)",
+              backgroundImage: `url("${githubMark}")`,
               border: ".0625rem solid #dee2e6",
               display: "flex",
               borderRadius: ".5rem",
@@ -54,7 +56,7 @@ export function GithubIconButton() {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundColor: !hovered ? "#ffffff" : "#f8f9fa",
-              backgroundImage: "url(src/assets/github-mark.svg)",
+              backgroundImage: `url("${githubMarkWhite}")`,
               border: ".0625rem solid #dee2e6",
               display: "flex",
               borderRadius: ".5rem",

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr'
 import path from 'path'
 
 // https://vite.dev/config/
@@ -10,7 +11,7 @@ export default defineConfig({
     }
   },
 
-  plugins: [react()],
+  plugins: [react(), svgr()],
 
   // Dev server
   server: {
@@ -19,4 +20,9 @@ export default defineConfig({
     strictPort: true,
     cors: true,
   },
+
+  build: {
+    assetsDir: 'assets',
+    assetsInlineLimit: 0,
+  }
 })

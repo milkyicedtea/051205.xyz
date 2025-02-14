@@ -16,4 +16,4 @@ dist
 .yarn
 
 # Locks
-*.lock
+#*.lock
