@@ -11,7 +11,7 @@ export function AppShellMainContent() {
     <AppShell.Main>
       <Container style={{
         padding: 0,
-        marginInline: '5.5rem',
+        marginInline: '10%',
         marginTop: '1.25rem',
         width: '80%',
 
@@ -32,11 +32,11 @@ export function AppShellMainContent() {
             Welcome to my dev page!
         </Text>
 
-        <Container style={{display: 'flex', alignItems: 'center', paddingLeft: '.5rem'}}>
+        <Container style={{display: 'flex', alignItems: 'flex-start', paddingLeft: '.5rem', flexWrap: 'wrap', gap: "0.25"}}>
           <Text style={{...homeStyles.descriptionText, color: colorScheme === "dark" ? "#FFCC00" : "var(--mantine-color-dark-6)"}}>
               I'm&nbsp;
           </Text>
-          <Container style={{...homeStyles.descriptionText, padding: 0, margin: 0, color: colorScheme === "dark" ? "#FFCC00" : "var(--mantine-color-dark-6)"}}>
+          <Container style={{...homeStyles.descriptionText, padding: 0, margin: 0, color: colorScheme === "dark" ? "#FFCC00" : "var(--mantine-color-dark-6)", flex: 1}}>
             <Typewriter
               options={{
                 autoStart: true,

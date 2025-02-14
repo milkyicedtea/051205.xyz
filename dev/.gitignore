@@ -17,3 +17,6 @@ dist
 
 # Locks
 #*.lock
+
+# Build files
+*.tsbuildinfo
