@@ -1,0 +1,6 @@
+[submodule "paste/backend"]
+	path = paste/backend
+	url = https://github.com/milkyicedtea/PasteIt-Backend.git
+[submodule "paste/frontend"]
+	path = paste/frontend
+	url = https://github.com/milkyicedtea/PasteIt-Frontend.git
